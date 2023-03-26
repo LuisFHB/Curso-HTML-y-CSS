@@ -1,0 +1,175 @@
+
+/* para editar una clase damos .nombreClase ,la clase la definimos en html*/
+.lista {
+  color: rgb(43, 165, 104);
+}
+
+
+
+/* Selectores tipo input todo lo que se defina en {} */ 
+ h3{
+  color:green;
+  font-size: 25px;
+  
+}
+/* font-size para dar tamaño de letra*/
+h4{
+  color:blueviolet;
+  font-size: 25 px;
+  font-family: Arial;
+}
+
+/* podemos poner comas para especificar que vamos a trabajar varios elementos*/
+p,ul, ol {
+  color:purple;
+  font-size: 20 px;
+  font-family: 'Roboto', sans-serif; 
+}
+/*font-family para asignar tipo de letra, podemos agregar fuentes desde fonts.google.com */
+
+
+/*selector de tipo lista no ordenada*/
+/*
+ul{
+  color: chocolate;
+}
+*/
+
+
+/*el sector universal es decir todo el texto de la pagina, en lugar de poner h4 o p, colocamos un asterisco * */  
+/*
+*{
+  color: green;
+}
+*/
+
+/* dar tamaño a una imagen img para afectar todos o bien podemos crear una clase*/
+img{
+  width: 200px;
+}
+/* agregar borde a imagenes de una clase*/
+
+/* indicamos clases y id en una sola linea*/
+.Luna1, .Luna2, #lomito1{
+  border-width: 5px;
+  border-color:blue;
+  border-style: solid;
+  /*style solid=solido |none= ninguno | dotted = puntos | dashed = lineas punteadad | double | groove = enmarcado | ridge | inset | outset
+  Estos se pueden combinar para tener varios valores en un marco
+  */
+  border-radius: 50px;
+ /*redondear bordes, puedes agregar % en lugar de px para indicar el porcentaje que se va a rendodear*/
+
+}
+/*podemos usar div  para asignar valores*/
+div{
+  background-color:burlywood;
+  /*bakcground- color para color de fondo*/
+}
+main{
+  background-color: antiquewhite;
+}
+
+
+/* o bien usar un id pero colocamos un # antes del nombre del id */
+
+#Titulo-inicial{
+  font-family: 'Pacifico', sans-serif, cursive;
+  font-size:30px;
+}
+
+#lomito1{
+  padding: 15px;
+  /*usamos pading para marcar el espacio entre la imagen y el borde, digamos que pading es el premargen*/
+}
+
+.Luna1{
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  /*podemos agregar el premargen especificando en 4 lineas*/
+}
+
+.Luna2{
+ background-color: black; 
+ padding: 20px 15px 10px 5px;
+ /*podemos indicar el premargen de cada lado en una sola linea considerando que iniciamos en el borde superior y avanzamos en el sentido de las manecillas del reloj*/
+ margin: 15px;
+ /*utilizamos margin para asignar el margen o separacion que tendra la imagen desde el inicio de la pagina u otro elemento junto
+ Al igual que el pading puedes especificar el tamaño de margen de cada lado en varias lineas o en una sola*/
+
+ /*PODEMOS DECIR QUE EL PADING ES LA DISTANCIA DEL ELEMENTO AL BORDE Y EL MARGEN ES LA DISTANCIA DEL BORDE A EL INICIO DE LA PAGINA O DE OTRO ELEMENTO*/
+}
+
+/* seleccion por atributos en el caso de imagenes img[atributo], el atributo por ejemplo puede ser ALT*/
+/*en el ejemplo seleccionamos los elementos tipo radio*/
+[type="radio"]{
+ margin: 5px;
+}
+
+[type="checkbox"]{
+  margin: 8px;
+}
+
+/*seleccionar atributo enlace (a) */
+
+a[href="https://www.pinterest.com.mx/search/pins/?rs=ac&len=2&q=schnauzer&eq=shnau&etslf=5247"]{
+  color: green;
+  text-decoration:none;
+  /* text-decoration: none para quitar el subrayado*/
+  font-weight: bold;
+  /*font-weight: bold para negritas*/
+}
+
+#contenedor-tamanos{
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  background-color:  yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulo{
+  padding: 5px;
+  margin: 5px;
+}
+
+.px{
+  background-color: crimson;
+  width: 200px;
+  /*este tipo se mantendra de tamaño de 200 px*/
+}
+
+.vw{
+  background-color: darkmagenta;
+  width: 20w;
+  /*este tipo mantendra el 20 porciento del tamaño de la ventana*/
+}
+
+.em{
+  background-color: green ;
+  width: 15em;
+  /*y este mantendra el porcentraje del tamaño de la letra asignada*/
+  font-size: 2em;
+  /* al usar font size decimos que queremos multiplicar el tamaño de la letra por el numero es decir aumenatrlo*/
+}
+
+a[href="https://www.pinterest.com.mx/search/pins/?rs=ac&len=2&q=schnauzer&eq=shnau&etslf=5247"]{
+  text-decoration:purple wavy underline;
+  /* wavy texto ondulado y underline subrayado observemso que podemos poner color y estilo en un solo codigo sin embargo css le dara mayor prioridad si se definen por separado */
+  font-weight: wavy;
+  /*font-weight: bold para negritas*/
+}
+
+/*JERARQUIA DE IMPORTANCIA O PRIORIDAD
+Siempre se aplicara la ultima linea escrita pero tambien:
+tipo<clase<id  y ademas
+STYLE EN CSS< STYLE EN HTML
+
+para darle mayor prioridad a css podemos poner !important por ejmeplo
+color: blue !important; */
+
+/*COULOR PIKER PARA CODIGO DE COLORES hexadecimales o RGB
+por ejemplo en RGB:
+color: rgb(000,000,000)*/

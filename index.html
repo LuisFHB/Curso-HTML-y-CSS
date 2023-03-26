@@ -1,0 +1,149 @@
+<!--Para comentar ponemor los simbolos de inicio y final-->
+<!--Primer codigo para inidcar version html-->
+ <!DOCTYPE html>
+<!--Elemento se usan para definir las estructuras de la pagina 
+    Se realiza con etiquetas por ejemplo <html>  </html> -->
+<html lang="es"> <!--Esta es la etiqueta principal-->
+<!--lang="Idioma"-->
+  <head> <!--Funciones basicas que necesita la pagina (METADATA) como css-->
+    <title>AppLomitos2</title>
+    <!--Con link href="nombrearchivo" conectamos el archivo css y con rel="stylesheet decimos que es una hoja de estilo"-->
+    <link href="style.css" rel="stylesheet">
+    <!--Con Style podemos definir el estilo y color de un texto por ejemplo h1 de color rojo-->
+    <style>
+      h1{ color:red }      
+          
+    </style>
+   <!--Podemos colocar fuentes desge font.google.com--> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body> <!--Estructura de la pagina-->
+    <h1>Hola Mundo </h1><!--cada encabezado va reduciendo su tamaño-->
+    
+      <h2>Hola Mundo</h2>
+      <h3 style="color:blue">Hola Mundo</h3> <!--Al agregar style podemos agregar un estilo y color individual-->
+      <h4>Hola Mundo</h4>
+      <h5>Hola Mundo</h5>
+      <h6>Hola Mundo</h6>
+      <h7>Hola Mundo</h7><!--Excepto el 7 aqui ya no respeta la reduccion ni tipo de letra-->
+
+    <main> <!--colocamos dentro de main todo lo que se considere el cuerpo pricnipal-->
+      <h1 id="Titulo-inicial">Lomitos</h1> <!--Podemos repetir h1 por que solo representa el estilo y tamaño de letra-->
+      <!--El id se coloca para dar una clave unica se puede hacer con parrafor o con imagenes-->
+
+      <p>Año con año surgen términos que los más jóvenes utilizan para comunicarse con sus amigos. El caso más reciente es el de GPI y POV, cuyas abreviaturas significan Point of view (Punto de vista en español) y Gracias por invitar, respectivamente.</p> <!--Por cada parrafo en la pagina tendremos un salto de pagina-->
+
+      <p>Sin embargo, una palabra utilizada desde hace mucho tiempo para hacer referencia a los perritos es 'lomitos'. Hoy en día es muy común que la mayoría de las personas se refieran a los peludos con ese apodo.</p>
+
+      <a href="#lomito1">Lomito 1</a> <!--Colocamos href=#id para hacer un hipervinculo en la misma pagina-->
+      <a href="#lomito2">Lomito 2</a> <!--Si dejamos solo el # creamos un enlace muerto -->
+      <a href="#lomito3">Lomito 3</a> <!--Un enlace muerto nos sirve para identificar una futura posicion de un enlace-->
+
+      <p>Haz click <a href="https://www.pinterest.com.mx/daany_trujillo/fotos-con-lomitos/">aqui</a> para ver mas imagenes de lomitos</p> <!--Para crear un hipervinuculo a otra pagina 
+        utilizamos etiqueta <a href="url">texto para convertir en vinculo </a>-->
+      
+      <p>Haz click <a href="https://www.pinterest.com.mx/search/pins/?rs=ac&len=2&q=schnauzer&eq=shnau&etslf=5247" target="_blank" rel="noopener noreferrer">aqui</a> para ver mas imagenes de lomitos en otra pestaña</p> 
+      <!--Agregamos target="_blank", para indicar que habra la pagina en otra pestaña 
+       y agregamos rel="noopener noreferrer", para evitar que cambien nuesta url, es utilizado como seguridad-->      
+       
+  
+      <img id="lomito1" src="https://wakyma.com/blog/wp-content/uploads/2016/10/raza-de-perro-schnauzer-1024x576.jpg" alt="Un bello lomito">  <!--imagen en internet (src para indicar la direccion ), esta etiqueta no necesita cierre-->
+      <!--alt se utiliza para dar una descripcion a la imagen si no carga -->
+            
+      <h3>Click en la imagen para ver imagenes de bebes de los lomitos de cada raza </h3>
+      <a href="https://www.pinterest.com.mx/search/pins/?rs=ac&len=2&q=schnauzer%20bebe&eq=schnauzer%20be&etslf=4114" target="_blank"><img src="imagenes/schanuzer.png"></a>
+      <!--Para crear una imagen que te lleve a otro enlace rodeamos la etiqueta con la etique <a> -->       
+
+      <a href="https://www.pinterest.com.mx/search/pins/?q=perro%20salchicha%20bebe&rs=typed" target="_blank"><img src="imagenes/lomo-salchicha.png"></a><br> <br>
+
+      
+      
+      <hr> <!--<hr> se usa para crear una linea horizontal para separar secciones de la pagina-->
+      
+      <div >
+        <h2>Lista de lomitos</h2>
+        <h3>Cosas que aman los lomitos</h3>
+        <ul class="lista"  > <!-- ul = unorden list, creamos lista no ordenada class="" para indicar la clase-->
+          <li>Pasear</li> <!--Se debe poner uno por cada elemento de la lista-->
+          <li><strong>Dormir</strong></li> <!--Strong ayuda a poner las letras en negritas-->
+          <li><em>Comer</em></li> <!--em letra en cursiva -->
+          <li>Galletas con crema de cacahuate</li>
+        </ul>
+
+        <img class="Luna1" id="lomito2" src="Luna.jpeg" alt="Luna1"> <!--Imagen que tenemos en la misma carpeta donde se aloja la pagina-->
+
+        <img class="Luna2 "id="lomito3"src="imagenes/Luna2.jpeg" alt="Luna2"> <!--Imagen dentro de otra carpeta --> 
+
+        <h3>Cosas que odian los lomitos</h3>
+        <ol class="lista"> <!-- ol = orden list, creamos lista ordenada-->
+          <li>Pirotecnia</li> <!--Se debe poner uno por cada elemento de la lista-->
+          <li><s>Dueños de</s>gatos </li> <!-- <s> para tachar-->
+          <li>Galletas sin crema de cacahuate</li>
+        </ol>
+      
+      </div>
+
+      <hr>
+
+      <form action="/enviar-respuesta"> <!--Para crear un formulario usamos <form action="nombre del archivo que recibe"> -->
+       <p>Queremos saber mas de tu lomito:</p>
+       <input type="text" placeholder="Pon la URL de tu lomito aqui" required> <!--Indicar entrade de texto-->
+        <!--Placeholder sirve para marcar un hint, required sirve para indicar notnull del campo -->
+      
+      <!--Botones Radio-->
+      <p> ¿Donde prefiere estar tu lomito?</p>
+       <label>
+        <input id="interior"type="radio" value="interior" name="interior-exterior" checked> Interior</label> 
+       <br> <!--creamos un salto de linea-->
+       <label>
+        <input id="exterior"type="radio" value="exterior" name="interior-exterior"> Exterior
+       </label>
+       <!--input type="radio"sirve para dar de alta un boton radio, label para que toda el texto funcione un boton, value se usa para indicar el valor que se otorga al campo si se activa esa opciony name="nombreGrupo", asigna a un grupo lo que hace que solo se pueda seleccionar uno a la vez-->
+      <br> 
+
+      <!--Casilla de verificacion-->
+      <p> ¿Cual es su personalidad?</p>
+      <label for="carinoso">
+        <input id="carinoso"type="checkbox" value="Cariñoso"name="personalidad"checked>Cariñonos
+      </label> <br>
+      <label for="perezoso">
+        <input id="perezoso" type="checkbox" value="Perezoso" name="personalidad">Perezoso 
+      </label> <br>
+      <label for="energico">
+        <input id="energico" type="checkbox" value="Energico" name="personalidad">Energico 
+      </label><br>
+       <!--type=checkbox para indicar un check box y checked para marcar una casilla por defecto lo mismo se puede hacer
+      con los type=radio, a diferencia de los radio los checkbox si pueden tener varias opciones seleccionada a la vez --> 
+
+      <button type="submit">Enviar</button> <!--Creamos boton que mande la informacion al archivo declarado en form-->
+       </form>
+
+
+      
+      <a href="#Titulo-inicial">Inicio</a> <br>
+      <hr>
+      <div id="contenedor-tamanos">
+        <div class="rectangulo px">200px de Ancho</div>
+        <div class="rectangulo vw">20vw de Ancho</div>
+        <div class="rectangulo em">15em de Ancho</div>
+      </div>
+
+
+
+
+    </main>
+    
+
+<!--footer para indicar el pie de pagina-->
+    <footer>
+    <p><small> Derechos de autor-freeLuis.com</small></p>
+    </footer>
+    <!--small para indicar una letra mas pequeña-->
+
+
+  </body>
+</html> <!--fin de la etiqueta principal-->
+<!-- no todas las etiquetas se usan inicio y final-->
